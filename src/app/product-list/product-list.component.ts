@@ -1,6 +1,21 @@
 import { Component } from '@angular/core';
-
-import { products } from '../products';
+  var products = [
+  {
+    name: 'Phone XL',
+    price: 799,
+    description: 'A large phone with one of the best screens'
+  },
+  {
+    name: 'Phone Mini',
+    price: 699,
+    description: 'A great phone with one of the best cameras'
+  },
+  {
+    name: 'Phone Standard',
+    price: 299,
+    description: ''
+  }
+];
 
 @Component({
   selector: 'app-product-list',
@@ -9,13 +24,14 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = products;
-
+  removeItem = function(item){
+    alert(item);
+  }
   share() {
     window.alert('The product has been shared!');
   }
 }
-
-
+ 
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
