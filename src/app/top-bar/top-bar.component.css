@@ -11,12 +11,23 @@ body {
   top: 0;
   left: 0;
   overflow-x: hidden;
-  transition: 0.5s; 
-   background-color: #f1f1f14d;
+   transition: 0.5s; 
+ 
 }
-.sidenav>div#nav{
+.sidenav div#nav{
+  width: 200px;
    background-color: #111;
    height: 100%;
+   z-index: 2;
+} 
+.sidenav div#hover{
+  z-index: -1;
+ 
+   height: 100%;
+   width: 100%;
+   top :0;
+   left: 0;
+   position:absolute;
 } 
 .sidenav a {
   padding: 8px 8px 8px 32px;
