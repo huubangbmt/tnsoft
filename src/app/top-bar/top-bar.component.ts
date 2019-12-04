@@ -1,22 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-top-bar',
-  templateUrl: './top-bar.component.html',
-  styleUrls: ['./top-bar.component.css']
+  selector: "app-top-bar",
+  templateUrl: "./top-bar.component.html",
+  styleUrls: ["./top-bar.component.css"]
 })
 export class TopBarComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {}
+  ngOnInit() {}
+  openNav() {
+    document.getElementById("mySidenav").style.width = "100%"; 
   }
-
+  closeNav() {
+    document.getElementById("mySidenav").style.width = "0"; 
+  }
 }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
