@@ -13,7 +13,7 @@ import { ItemComponent } from './item/item.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      { path: 'item', component: ProductListComponent },
+      { path: 'item', component: ItemComponent },
     ])
   ],
   declarations: [
