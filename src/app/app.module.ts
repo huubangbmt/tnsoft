@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component'; 
 import { ItemComponent } from './item/item.component';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -14,13 +15,15 @@ import { ItemComponent } from './item/item.component';
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'item', component: ItemComponent },
+      { path: 'login', component: LoginComponent }
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    ItemComponent
+    ItemComponent,
+    LoginComponent
   ],
   bootstrap: [ AppComponent ]
 })
