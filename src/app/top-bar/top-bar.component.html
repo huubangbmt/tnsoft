@@ -1,12 +1,12 @@
-<a [routerLink]="['/item']" class="button"><i class="material-icons">shopping_cart</i></a>
-<a [routerLink]="['/']">
-  <h1>My Store</h1>
-</a>
-
-<a [routerLink]="['/item']" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
-
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
--->
+<div id="mySidenav" class="sidenav" (click)="closeNav()">
+	<div id="nav" style="width:150px;"> 
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Clients</a>
+		<a href="#">Contact</a>
+	</div>
+ 
+</div>
+<nav class="navbar navbar-dark bg-primary">
+	<span class="navbar-toggler-icon" (click)="openNav()"></span>
+</nav>
