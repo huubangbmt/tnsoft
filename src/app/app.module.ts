@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -10,6 +11,7 @@ import { ItemComponent } from './item/item.component';
 import { LoginComponent } from './login/login.component';
 @NgModule({
   imports: [
+    FormsModule,
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
