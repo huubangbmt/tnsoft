@@ -25,15 +25,12 @@ import { Component } from '@angular/core';
 export class ProductListComponent {
   products = products;
   removeItem = function(item){
-    alert(item);
+     var index = this.products.findIndex(function (o) {
+            return o === item;
+        })
+        if (index !== -1) this.products.splice(index, 1);
   }
   share() {
     window.alert('The product has been shared!');
   }
 }
- 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
